@@ -1,24 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import { normalizedData } from "./lib";
+import "./App.css";
 
 function App() {
+  useEffect(() => {
+    console.log(normalizedData);
+  });
+
   return (
     <div className="App">
-      <nav class="bg-gray-800">Hello world</nav>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav className="bg-gray-800">Hello world</nav>
     </div>
   );
 }
